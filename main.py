@@ -40,5 +40,11 @@ print(varlist[7:])
 print(varlist[-3:])
 
 #print the list in the reverse order
-for i in range(len(varlist)):
+for i in range(len(varlist)-1,-1,-1):
     print(varlist[i])
+#or
+for i in varlist[::-1]:
+    print(i)
+#or
+for i in reversed(varlist):
+    print(i)
