@@ -48,3 +48,36 @@ for i in varlist[::-1]:
 #or
 for i in reversed(varlist):
     print(i)
+
+
+animal_list = ['lion','tiger','cheetah','horse','kangaroo','ant','butterfly','beetle','crocodile','alligator','donkey','mouse','cat','dog','fish']
+
+for i in range(len(animal_list)):
+    print(animal_list[i])
+
+#how to check if a certain animal is in the list
+for animal in animal_list:
+    #if we dont use range then "animal"will hold whatever the item is. (see line 74)
+    if animal == 'ant' :
+        print("ant is in the list")
+    else :
+        print("")
+#or
+for i in range(len(animal_list)):
+        #if we do use range then "i" will hold the index number. (see line 75)
+
+    if animal_list[i] == 'ant' :
+        print("ant is in the list")
+    else :
+        print("")
+
+print (animal)
+print (i)
+
+print()
+
+prices_list = [15,8,25,42,69.99,86,99]
+
+#find the average of the list
+average=((sum(prices_list))/7)
+print(round(average,2))
